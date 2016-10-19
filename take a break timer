@@ -1,0 +1,15 @@
+#user can set the time in hours and minutes after which it reminds him to take a break.
+#by opening a youtube video on browser.
+#user can lso decide how many times he want to run the timer.
+import webbrowser
+import time
+h=input("enter hours: ")
+m=input("enter minutes: ")
+t=input("enter the no. of times you want to run the timer: ")
+counter=0
+no_times=t-1
+while (counter<=no_times):
+	y=time.sleep(h*60*60) #it is delaying the execution of the line below it by 'h' hours.
+	z=time.sleep(m*60)
+	x=webbrowser.open("https://www.youtube.com/watch?v=D9KfGLP30BE") #this is used to open any linkthrough default browser.
+	counter +=1
